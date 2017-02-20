@@ -1,0 +1,15 @@
+var hola = function hola (){var name = "myName "; console.log(name)}
+undefined
+hola
+function hola(){var name = "myName "; console.log(name)}
+hola()
+VM4642:1 myName 
+undefined
+var hola = function hola (){var name = "myName "; return name}
+undefined
+hola
+function hola(){var name = "myName "; return name}
+hola()
+"myName "
+hola() 
+"myName 

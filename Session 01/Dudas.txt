@@ -1,0 +1,32 @@
+1- Dudas ejercicios i) y j).
+
+No me sale el split()
+var name="Toni";
+function mostrar(name){
+	var letras= name.split("/");
+	console.log("Mi nombre separado por . es: \n" + letras)
+}
+mostrar(name)
+
+Esta es la solución:
+
+var name="Toni";
+function showLetters(name){
+	var letters = name.split("");
+	var reformedString = letters.join("/")
+	console.log("My letters are: " + reformedString)
+}
+showLetters(name)
+
+Mi solución simple:
+var str = "Toni";
+var res = str.split(""); //separo cada letra como si fuera un array cada una de ellas)
+console.log(res);
+var separador = res.join("/");// unimos el array anterior con /
+console.log(separador);
+
+
+2- 
+Dudas, ejercicio a) sobre convertir a un string (Stringify no es sobre el JSON)
+Duda en el ejercicio c) metodo (parse)
+Ejercicios e) y f) ¿?
