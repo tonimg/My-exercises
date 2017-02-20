@@ -17,8 +17,8 @@ function calculadora (num1,num2){
 	var div = num1 / num2; 
 	var square = Math.sqrt(num1);
 
-	if  (typeof num2 == null ||' undefined' || 0 || isNaN(num2) == true){
-		console.log("La raiz cuadrada de " + num1 + " es igual a " + square)
+	if  (typeof num2 == null || undefined || 0 || isNaN(num2) == true){
+		console.log("La raiz cuadrada de " + num1 + " es igual a " + square.toFixed(3))
 	}
 	else if (isNaN(num1) == true || isNaN(num2) == true){
 		console.log ("This is not a number")
@@ -30,5 +30,18 @@ function calculadora (num1,num2){
 	console.log ("La multiplicación de " + num1 + " y " + num2 + " es igual a= " + multi )
 	console.log ("La división de " + num1 + " y " + num2 + " es igual a= " + div.toFixed(3) )
 	}
+
+//Tengo un error que solo funciona cuando introduzco dos números. Al introducir uno me da error
+	 var resulArr = [sum, rest, multi, div.toFixed(3), square.toFixed(3)]
+	 console.log ("Mostramos resultados almacenados en un array: " + resulArr)
+
 }
+var newNumb= prompt ("Do you want introduce other number?")
+if (isNaN(newNumb) == false || undefined || null){
+	calculadora(newNumb)
+}
+else {
+	alert ("The value entered is not a number. See you later, baby")
+}
+
 calculadora(9);
