@@ -91,11 +91,38 @@ console.log ("Add new property called city: \n City: " + student.city)
 newProperty();
 
 //f) List the number of properties we have now on objects.
+function newProperty(){
+	console.log("showing of properties:\n")
+var student = {name: "David Aughan", class: "VI", id: "12", city: "Barcelona"};
+console.log(student)
+}
+newProperty();
 
 console.log() // There are 4 info fields
-g) Change the property name to fullName
+//g) Change the property name to fullName
+function changePropertyName(){
+var student = {name: "David Aughan", class: "VI", id: "12"};
+console.log(student)
+console.log ("Show diferents properties: \n Name: " + student.name + "\n Class: "+ student.class +"\n Id: " + student.id)
+delete student.name;
+student.fullname = "Tony Stark";
+console.log("Now has changed the property name. \n Fullname: " + student.fullname)
+console.log(student)
+}
+changePropertyName();
 
-g1) Asure the changes.
+
+//g1) Asure the changes.
+function changePropertyName(){
+var student = {name: "David Aughan", class: "VI", id: "12"};
+console.log(student)
+console.log ("Show diferents properties: \n Name: " + student.name + "\n Class: "+ student.class +"\n Id: " + student.id)
+delete student.name;
+student.fullname = "Tony Stark";
+console.log("Now has changed the property name. \n Fullname: " + student.fullname)
+console.log(student)
+}
+changePropertyName();
 
 console.log(fullName) // Tony Stark
 h) For last, add a presentation message like: "Hello, my name is " + ..., and show all values of the object.
@@ -108,7 +135,7 @@ h2) Asure the changes and show for console.
 console.log(location) // NYC
 i) Make a constructor object called avenger and pass the info, creating a instance of the object with the properties of our created object
 
-http://www.wVIschools.com/js/js_object_definition.asp
+https://www.w3schools.com/js/js_object_definition.asp
 
 Example:
 
