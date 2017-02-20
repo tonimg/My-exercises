@@ -41,12 +41,10 @@ Names of such functions are usually capitalized.
 //a) Do a simple function for show the names of the properties.
 function namesProperties(){
 var student = {name: "David Aughan", class: "VI", id: "12"};
-console.log (student.name)
+console.log (student)
 }
 namesProperties();
 
-//console.log(something, somethingMore, somethingMoreAndMore)
-//name, class, id
 //b) Now, do a simple function for show the content of those properties.
 function contentProperties(){
 var student = {name: "David Aughan", class: "VI", id: "12"};
@@ -54,7 +52,6 @@ console.log ("Show diferents properties: \n" + student.name + "\n"+ student.clas
 }
 contentProperties();
 
-//console.log(somethingThatShowsThings) //Tony, VII, 01
 //c) So, we can change a property value? Change the class to "XI".
 function changeValueProperties(){
 var student = {name: "David Aughan", class: "VI", id: "12"};
@@ -74,7 +71,6 @@ console.log ("Now id property is delete: \n Name: " + student.name + "\n Class: 
 }
 deleteIdProperty();
 
-
 //e) Add a new property called city and give some value
 function newProperty(){
 var student = {name: "David Aughan", class: "VI", id: "12"};
@@ -84,12 +80,17 @@ console.log ("Add new property called city: \n Name: " + student.name + "\n Clas
 }
 newProperty();
 
-https://www.w3schools.com/js/js_properties.asp
+// More information:  https://www.w3schools.com/js/js_properties.asp
 
-//e1) Asure the changes showing the property in console.
+//e1) A sure the changes showing the property in console.
+function newProperty(){
+var student = {name: "David Aughan", class: "VI", id: "12"};
+student.city = "Barcelona";
+console.log ("Add new property called city: \n City: " + student.city)
+}
+newProperty();
 
-console.log(city) // New York City
-f) List the number of properties we have now on objects.
+//f) List the number of properties we have now on objects.
 
 console.log() // There are 4 info fields
 g) Change the property name to fullName
