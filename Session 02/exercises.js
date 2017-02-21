@@ -3,7 +3,7 @@ JS Objects{:sunglasses:}
 
 Reference:
 
-http://www.wVIschools.com/js/js_objects.asp
+http://www.w3schools.com/js/js_objects.asp
 
 Simple JS Object for example.
 
@@ -21,7 +21,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objec
 
 http://javascript.info/tutorial/objects
 
-https://www.wVI.org/wiki/Objects_in_JavaScript //Try to do the exercise of calculate the area of triangle
+https://www.w3.org/wiki/Objects_in_JavaScript //Try to do the exercise of calculate the area of triangle
 
 VI...2...1...GO!
 
@@ -215,6 +215,17 @@ avenger();
 namesAvengers();
 
 //m) Make other student and prepare for ONLY show the names, the age and location.
+function student(fullName, studies, city, markAv){
+    this.fullName = fullName;
+    this.studies= studies;
+    this.city = city;
+    this.markAv = markAv;
+};
+
+var student = new student("Toni Marchante", "Skylab Coders", "Barcelona" 10);
+var otherStudent = new student("Palotes", "MIT", "Gominolandia", 2) 
+console.log (student + otherStudent)
+student(fullName);
 
 console.log(propertyValues) // my name, my age and my location!
 
