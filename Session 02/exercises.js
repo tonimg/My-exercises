@@ -98,7 +98,6 @@ console.log(student)
 }
 newProperty();
 
-console.log() // There are 4 info fields
 //g) Change the property name to fullName
 function changePropertyName(){
 var student = {name: "David Aughan", class: "VI", id: "12"};
@@ -110,7 +109,6 @@ console.log("Now has changed the property name. \n Fullname: " + student.fullnam
 console.log(student)
 }
 changePropertyName();
-
 
 //g1) Asure the changes.
 function changePropertyName(){
@@ -124,42 +122,78 @@ console.log(student)
 }
 changePropertyName();
 
-console.log(fullName) // Tony Stark
-h) For last, add a presentation message like: "Hello, my name is " + ..., and show all values of the object.
+//h) For last, add a presentation message like: "Hello, my name is " + ..., and show all values of the object.
+function presentation(){
+	var presentation = {name: "Toni", city: "Barcelona", age: "40", job: "programer"};
+	console.log("Hello, my name is " + presentation.name + ", I live in " + presentation.city + ", I'm " + presentation.age + " years old and I want to be " + presentation.job + ".")
+}
+presentation();
 
-console.log(...) // "Hi there, I'm Tony Stark..."
-h1) Add some properties more...like job, Studies and Marks average
+//h1) Add some properties more...like job, Studies and Marks average
 
-h2) Asure the changes and show for console.
+//h2) Asure the changes and show for console.
+function presentation(){
+	var presentation = {name: "Toni", city: "Barcelona", age: "40", job: "programer"};
+	console.log("Hello, my name is " + presentation.name + ", I live in " + presentation.city + ", I'm " + presentation.age + " years old and I want to be " + presentation.job + ".")
+}
+presentation();
 
-console.log(location) // NYC
-i) Make a constructor object called avenger and pass the info, creating a instance of the object with the properties of our created object
+//i) Make a constructor object called avenger and pass the info, creating a instance of the object with the properties of our created object
+function avenger(fullName, type, city, job, studies,markAv) {
+    this.fullName = fullName;
+    this.type = type;
+    this.city = city;
+    this.job= job;
+    this.studies= studies;
+    this.markAv = markAv;
+};
+var tonyStark = new avenger("Tony Stark", "XI", "NYC", "Ingeneer", "MIT", 10);
+console.log(tonyStark)
+avenger();
+
 
 https://www.w3schools.com/js/js_object_definition.asp
 
 Example:
 
-function avenger(fullName, class, city, job, studies,markAv) {
+/*function avenger(fullName, type, city, job, studies,markAv) {
     this.fullName = fullName;
-    this.class = class;
+    this.type = type;
     this.city = city;
     this.job= job;
     this.studies= studies;
     this.markAv = markAv;
-}
+};
 var tonyStark = new person ("Tony Stark", "XI", "NYC", "Ingeneer", "MIT", 10)
 console.log(tonyStark)
-j) Create other avenger and print the name for console
+avenger();*/
 
-var otherAvenger = new Avenger...
-console.log(otherAvenger) // Hulk...
-k) Now create one property of object that print a pretty description of avengers.
+
+//j) Create other avenger and print the name for console
+function avenger(fullName, type, city, job, studies,markAv) {
+    this.fullName = fullName;
+    this.type = type;
+    this.city = city;
+    this.job= job;
+    this.studies= studies;
+    this.markAv = markAv;
+};
+var tonyStark = new avenger("Tony Stark", "XI", "NYC", "Ingeneer", "MIT", 10);
+var otherAvenger = new avenger("Hulk","X","Barcelona", "Medic", "MIT", 5);
+console.log( tonyStark)
+console.log(otherAvenger)
+avenger();
+
+//k) Now create one property of object that print a pretty description of avengers.
 
 console.log(otherAvenger.somethingThatShows) // Hulk, VI0...
-l) Now, make a function that only shows the NAMES of created avengers.
+
+//l) Now, make a function that only shows the NAMES of created avengers.
 
 console.log(someFunction) // Tony Stark, Hulk, Thor...
-m) Make other student and prepare for ONLY show the names, the age and location.
+
+//m) Make other student and prepare for ONLY show the names, the age and location.
 
 console.log(propertyValues) // my name, my age and my location!
-n) For last, create yourself and create a function for catch all averages field of Avengers and shows the average of all of them.
+
+//n) For last, create yourself and create a function for catch all averages field of Avengers and shows the average of all of them.
