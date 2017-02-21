@@ -148,7 +148,7 @@ function avenger(fullName, type, city, job, studies,markAv) {
     this.markAv = markAv;
 };
 var tonyStark = new avenger("Tony Stark", "XI", "NYC", "Ingeneer", "MIT", 10);
-console.log(tonyStark)
+console.log(tonyStark.fullName + "\n" + tonyStark.type + "\n" + tonyStark.city + "\n" + tonyStark.job + "\n" + tonyStark.studies + "\n" + tonyStark.markAv)
 avenger();
 
 
@@ -180,17 +180,39 @@ function avenger(fullName, type, city, job, studies,markAv) {
 };
 var tonyStark = new avenger("Tony Stark", "XI", "NYC", "Ingeneer", "MIT", 10);
 var otherAvenger = new avenger("Hulk","X","Barcelona", "Medic", "MIT", 5);
-console.log( tonyStark)
-console.log(otherAvenger)
+console.log("Old avenger: " + tonyStark.fullName)
+console.log("New avenger: " + otherAvenger.fullName)
 avenger();
 
 //k) Now create one property of object that print a pretty description of avengers.
+function descriptionAvenger(name, description, city){
+	this.name = name;
+	this.description = description;
+	this.city = city;
+};
+var hulk = new descriptionAvenger("Hulk", "is very big when is angry, strong and green color monster", "NY");
+console.log("The litle description of this avenger (" + hulk.name + ") is that " + hulk.description + " and live in " + hulk.city + " city.")
+descriptionAvenger();
 
-console.log(otherAvenger.somethingThatShows) // Hulk, VI0...
 
 //l) Now, make a function that only shows the NAMES of created avengers.
-
-console.log(someFunction) // Tony Stark, Hulk, Thor...
+function avenger(fullName, type, city, job, studies,markAv) {
+    this.fullName = fullName;
+    this.type = type;
+    this.city = city;
+    this.job= job;
+    this.studies= studies;
+    this.markAv = markAv;
+};
+var tonyStark = new avenger("Tony Stark", "XI", "NYC", "Ingeneer", "MIT", 10);
+var otherAvenger = new avenger("Hulk","X","Barcelona", "Medic", "MIT", 5);
+console.log("Old avenger: " + tonyStark.fullName)
+console.log("New avenger: " + otherAvenger.fullName)
+function namesAvengers (fullName){
+	console.log("The name of avengers are: \n" + tonyStark.fullName + " and " + otherAvenger.fullName)
+}
+avenger();
+namesAvengers();
 
 //m) Make other student and prepare for ONLY show the names, the age and location.
 
