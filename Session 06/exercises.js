@@ -29,11 +29,13 @@ function calculadora (num1,num2){
 	console.log ("La resta de " + num1 + " y " + num2 + " es igual a= " + rest)
 	console.log ("La multiplicación de " + num1 + " y " + num2 + " es igual a= " + multi )
 	console.log ("La división de " + num1 + " y " + num2 + " es igual a= " + div.toFixed(3) )
+		showResultStore();
 	}
 
-//Tengo un error que solo funciona cuando introduzco dos números. Al introducir uno me da error
-	 var resulArr = [sum, rest, multi, div.toFixed(3), square.toFixed(3)]
-	 console.log ("Mostramos resultados almacenados en un array: " + resulArr)
+	function showResultStore (){ 
+	var resultStore = [sum, rest, multi, div.toFixed(3), square.toFixed(3)]
+	 console.log ("Mostramos resultados almacenados en un array: " + resultStore)
+	}
 
 }
 var newNumb= prompt ("Do you want introduce other number?")
