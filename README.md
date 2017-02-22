@@ -12,3 +12,4 @@ First week (08/02/17)/, a litle presentation, of course and explain the internal
 The second week (15/02/17), we are more people in the classroom. Here starting with the mini-project based in the calculator aplication for show in console the results (https://github.com/agandia9/studySessions/blob/master/studySession_2.md) and more homework for house, https://github.com/agandia9/studySessions/blob/master/studySession_6.md
 
 The thirth week (22/02/17)....
+After to check the calculator, now begin for the second mini-project (Airlines) Skylab Airlines! 22/02 - 28/02 ✈️🛩
