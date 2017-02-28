@@ -69,7 +69,6 @@ for (var i = 0; i < costFlights.length; i++) {
 console.log("The average price of our flights for today is => " + average)
 
 //How many flights have stopovers,
-//Como pillar todos los vuelos con parada y mostrar solo los true
 
 function stopovers (){
 	for (var i = 0; i < flights.length; i++){
