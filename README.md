@@ -17,4 +17,8 @@ After to check the calculator, now begin for the second mini-project (Airlines) 
 This mini project constitute in make a simulator of panel of the airlines, we show on the diferents available flights with his destination and what is the price more expensive and cheppers. Also, you can add new flights and delete if you is recognized like admin user, but you are not admin, the system is unavailable.
 
 
-Today, on the fourty week (01/03/2017), starting the next studie session.
+Today, on the fourty week (01/03/2017), starting the next studie session with other mi-project BINGO GAME! 1/03 - 8/03 🎲🎰.
+More information we can find in the link to below:
+    https://github.com/agandia9/studySessions/blob/master/studySession_6.md
+    
+In a few days I've my first Bingo program!!!
