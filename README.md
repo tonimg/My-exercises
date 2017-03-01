@@ -15,3 +15,6 @@ The thirth week (22/02/17)....
 After to check the calculator, now begin for the second mini-project (Airlines) Skylab Airlines! 22/02 - 28/02 ✈️🛩
 
 This mini project constitute in make a simulator of panel of the airlines, we show on the diferents available flights with his destination and what is the price more expensive and cheppers. Also, you can add new flights and delete if you is recognized like admin user, but you are not admin, the system is unavailable.
+
+
+Today, on the fourty week (01/03/2017), starting the next studie session.
