@@ -19,9 +19,9 @@ var flights = [
 
 //A message will be displayed welcoming the user,
 
-var name = prompt ("Wellcome, What is your name? please.") 
-var messageWellcome = "Wellcome " + name + " , this is the new Airlines company Skylab.";
-console.log(messageWellcome);
+var name = prompt ("Welcome, What is your name? please.") 
+var messageWelcome = "Welcome " + name + " , this is the new Airlines company Skylab.";
+console.log(messageWelcome);
 
 //The user can see a list of flights in a simple but comfortable message,
 
@@ -106,3 +106,34 @@ _Resources: http://stackoverflow.com/questions/1290131/javascript-how-to-create-
 
 http://stackoverflow.com/questions/15742442/declaring-array-of-objects
 */
+
+function adminOrUser(){
+   var message = confirm("Are you the admin Site?");
+   if( message == true ){
+      console.log ("The admin wants to continue!");
+      alert ("Wellecome admin!")
+      var introduceFlights = prompt("Wellecome admin!\n Now you can introduce news flights" + introduceFlights);
+      console.log("This is the new flight " + introduceFlights);
+      return true;
+   }
+   else{
+      console.log ("Dear user, you are not an admin, thanks four you visit!");
+      alert ("Thanks four you visit!")
+      return false;
+   }
+}
+adminOrUser();
+
+function flightsMaximunPrice( ){
+    var i, max = this[0];
+    for (i = 1; i < this.length; i++)
+    {
+    if (max < this[i])
+    max = this[i];
+    }
+    return max;
+}
+Array.prototype.max = flightsMaximunPrice;
+console.log(flights.max());
+
+
