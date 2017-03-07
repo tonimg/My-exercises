@@ -3,10 +3,10 @@ var nameUser = prompt("For the star the game please. \nWhat is your name? please
 var welcomeMessage = ("Welcome " + nameUser + " to the new Bingo Game!!!\n");
 // Star the game into a function
 function bingoGame() {
-  // Message welcome
+  //Message welcome
   console.log(welcomeMessage + "\nNow we show you card and number of the ball: \n");
   var numbersCard = 24;
-  // Definimos los números del carton:
+  //Defined the numbers of cardboard
   bingoCard = [];
   var randomNumber = [];
   while (bingoCard.length < numbersCard) {
@@ -23,7 +23,7 @@ function bingoGame() {
     }
   }
   console.log("You game whith those numbers: " + bingoCard + "\n");
-  //Definimos los numeros de la bola que extre el bombo
+  //Definined the numbers extracted of drum
   bingoBall = [];
   var randomBallNumber = [];
   while (bingoBall.length < numbersCard) {
@@ -46,7 +46,7 @@ if (next == 'y') {
 } else {
   console.log('bye')
 }
-//definimos puntuacion.
+//defined the total points. No completed
 var points = 0;
 console.log("Total points: " + points);
 }
