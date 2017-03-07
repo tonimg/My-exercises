@@ -10,7 +10,7 @@ function bingoGame() {
   bingoCard = [];
   var randomNumber = [];
   while (bingoCard.length < numbersCard) {
-    randomNumber = Math.floor(Math.random() * 24) + 1;
+    randomNumber = Math.floor(Math.random() * 74) + 1;
     var exist = false;
     for (var i = 0; i < bingoCard.length; i++) {
       if (bingoCard[i] == randomNumber) {
@@ -27,7 +27,7 @@ function bingoGame() {
   bingoBall = [];
   var randomBallNumber = [];
   while (bingoBall.length < numbersCard) {
-    randomBallNumber = Math.floor(Math.random() * 24) + 1;
+    randomBallNumber = Math.floor(Math.random() * 74) + 1;
     var existBall = false;
     for (var j = 0; j < bingoCard.length; j++) {
       if (bingoBall[j] == randomBallNumber) {
