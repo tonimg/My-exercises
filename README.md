@@ -22,3 +22,5 @@ More information we can find in the link to below:
     https://github.com/agandia9/studySessions/blob/master/studySession_6.md
     
 In a few days I've my first Bingo program!!!
+
+After to figth with the Bingo program, in this week, 08/03 - 15/03 study Html and CSS3.
