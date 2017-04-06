@@ -24,3 +24,5 @@ More information we can find in the link to below:
 In a few days I've my first Bingo program!!!
 
 After to figth with the Bingo program, in this week, 08/03 - 15/03 study Html and CSS3.
+
+For finally this pre-course, we must do our first proyect using HMTL, CSS3 and JS, will be the "Pasapalabra Game". Amaizing!!!
